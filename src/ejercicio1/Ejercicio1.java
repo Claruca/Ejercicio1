@@ -10,11 +10,11 @@ public class Ejercicio1 {
 
         while (letra != '.') {
             
-            if (letra >= 49 && letra <= 57) { 
-                int valor = Character.getNumericValue(letra);              
-                valor = valor +'a';               
-            
-                System.out.println((char)valor);
+             if (letra >= '0' && letra <= '9') {
+                int valor = letra - '0';                
+                valor = valor + 'a';
+
+                System.out.println((char) valor);
                 letra = lector.leerCaracter();
             } else {
                 System.out.println(letra);
